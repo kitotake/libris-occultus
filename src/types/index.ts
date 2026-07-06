@@ -44,6 +44,14 @@ export interface JournalEntry {
   tagCreature: string;
 }
 
+export interface Admin {
+  id: string;
+  email: string;
+  name: string;
+  passwordHash: string;
+  createdAt: string;
+}
+
 export interface BlocRecit {
   type: 'narration' | 'dialogue' | 'citation' | 'fin';
   auteur?: string;

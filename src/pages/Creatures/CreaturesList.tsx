@@ -2,18 +2,19 @@ import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import creaturesData from '../../data/creatures.json';
 import type { Creature } from '../../types';
+import { useContenuGerable } from '../../hooks/useContenuGerable';
 import CreatureCard from '../../components/CreatureCard/CreatureCard';
 import './Creatures.scss';
 
-const creatures = creaturesData as Creature[];
-const categories = ['Toutes', ...Array.from(new Set(creatures.map((c) => c.categorie)))];
-
 export default function CreaturesList() {
+  const { liste: creatures } = useContenuGerable<Creature>('creatures', creaturesData as Creature[]);
   const [categorie, setCategorie] = useState('Toutes');
+
+  const categories = useMemo(() => ['Toutes', ...Array.from(new Set(creatures.map((c) => c.categorie)))], [creatures]);
 
   const filtrees = useMemo(
     () => (categorie === 'Toutes' ? creatures : creatures.filter((c) => c.categorie === categorie)),
-    [categorie]
+    [categorie, creatures]
   );
 
   return (

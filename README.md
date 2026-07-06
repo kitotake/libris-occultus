@@ -79,18 +79,43 @@ npm run preview
 
 ## Notes d'implémentation
 
+- **Persistance : cookies, pas seulement localStorage.** Le Journal Intime
+  et le contenu ajouté/modifié via l'administration (créatures, cas) sont
+  stockés dans des **cookies** (`src/utils/cookieStorage.ts`), avec un
+  découpage automatique en plusieurs cookies pour les données un peu
+  volumineuses (limite ~4 Ko par cookie). Le JSON d'origine n'est jamais
+  modifié : les ajouts/éditions/suppressions vivent dans une "surcouche"
+  fusionnée à l'affichage (`src/hooks/useContenuGerable.ts`).
+- **Administration (`/admin`).** Formulaire de connexion avec le même
+  schéma que fourni (`id`, `email`, `name`, `passwordHash`, `createdAt`),
+  hash **bcrypt** vérifié via `bcryptjs` (`src/utils/adminAuth.ts`).
+  Compte de démo : `dev@libris-occultus.fr` / `grimoire2026` — à changer
+  en régénérant un hash avec `bcryptjs` pour un usage réel. ⚠️ Le site
+  étant 100% statique (pas de backend), cette authentification tourne
+  entièrement côté navigateur : elle évite les clics accidentels sur la
+  page d'admin, mais n'est pas une sécurité de production.
+- **Menu burger mobile.** Sous 960px, la navigation du header bascule
+  automatiquement dans un menu déroulant (`Layout.tsx` / `Layout.scss`),
+  animé avec Framer Motion, qui se referme seul à chaque changement de page.
+- **Sons d'ambiance.** 3 fichiers audio synthétiques sont fournis par
+  défaut dans `public/sounds/` (page qui tourne, plume qui gratte, boucle
+  d'ambiance grave) — le site fonctionne aussi sans eux si tu les remplaces
+  ou les supprimes.
 - **CRUD Journal** : les 5 entrées d'exemple (dont celles de Nina Singer)
-  sont chargées depuis `journalEntries.json` puis fusionnées dans le
-  `localStorage` via `useLocalStorage`. Créer, modifier ou supprimer une
-  entrée modifie uniquement le `localStorage` — les fichiers JSON restent
-  intacts. Pour repartir de zéro, vide la clé `libris-occultus:journal`
-  du localStorage de ton navigateur.
-- **Sons d'ambiance** : entièrement optionnels. Le site fonctionne
-  parfaitement sans aucun fichier audio ; voir `public/sounds/LISEZ-MOI.txt`.
+  sont chargées depuis `journalEntries.json` puis fusionnées avec les
+  cookies via `useCookieStorage`. Pour repartir de zéro, supprime les
+  cookies `libris-journal__*` de ton navigateur.
 - **Accessibilité** : focus visible au clavier, `prefers-reduced-motion`
   respecté sur les animations d'ambiance, libellés ARIA sur les contrôles
-  interactifs (bouton son, suppression, filtres).
+  interactifs (bouton son, burger, suppression, filtres).
 - **Cohérence narrative** : les données reprennent fidèlement les 6
   chapitres fournis (l'appel de Bobby, l'enquête, la possession de Nina,
   la traque du Djinn, l'affrontement final, et sa découverte du site
-  "Libris Occultus" lui-même dans le chapitre 6).
+  "Libris Occultus" lui-même dans le chapitre 6), lisibles page par page
+  via `/recit`.
+- **Créatures conformes à la mythologie Supernatural** : Djinn (contact
+  empoisonné, lame au sang d'agneau), Wendigo (vitesse, hibernation, feu),
+  Métamorphe (yeux réfléchissants, balle en argent), Vampire (**pas**
+  vulnérable au soleil, décapitation, sang de mort-vivant), Rugaru
+  (origine purement humaine).
+

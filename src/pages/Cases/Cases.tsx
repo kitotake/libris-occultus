@@ -4,11 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faCalendarDays, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import casesData from '../../data/cases.json';
 import type { Case } from '../../types';
+import { useContenuGerable } from '../../hooks/useContenuGerable';
 import './Cases.scss';
 
-const cases = casesData as Case[];
-
 export default function Cases() {
+  const { liste: cases } = useContenuGerable<Case>('cases', casesData as Case[]);
+
   return (
     <div className="conteneur page-cas">
       <header>

@@ -12,13 +12,13 @@ import {
 import creaturesData from '../../data/creatures.json';
 import casesData from '../../data/cases.json';
 import type { Case, Creature } from '../../types';
+import { useContenuGerable } from '../../hooks/useContenuGerable';
 import './Creatures.scss';
-
-const creatures = creaturesData as Creature[];
-const cases = casesData as Case[];
 
 export default function CreatureDetail() {
   const { id } = useParams<{ id: string }>();
+  const { liste: creatures } = useContenuGerable<Creature>('creatures', creaturesData as Creature[]);
+  const { liste: cases } = useContenuGerable<Case>('cases', casesData as Case[]);
   const creature = creatures.find((c) => c.id === id);
 
   if (!creature) {

@@ -10,7 +10,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import journalData from '../../data/journalEntries.json';
 import type { JournalEntry } from '../../types';
-import { useLocalStorage } from '../../hooks/useLocalStorage';
+import { useCookieStorage } from '../../hooks/useCookieStorage';
 import JournalEntryForm from './JournalEntryForm';
 import { jouerSon } from '../../utils/sound';
 import './Journal.scss';
@@ -20,8 +20,8 @@ function genererId() {
 }
 
 export default function Journal() {
-  const [entrees, setEntrees] = useLocalStorage<JournalEntry[]>(
-    'libris-occultus:journal',
+  const [entrees, setEntrees] = useCookieStorage<JournalEntry[]>(
+    'libris-journal',
     journalData as JournalEntry[]
   );
   const [formulaireOuvert, setFormulaireOuvert] = useState(false);
