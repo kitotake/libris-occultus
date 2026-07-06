@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faPenToSquare, faTrashCan, faXmark, faFloppyDisk } from '@fortawesome/free-solid-svg-icons';
 import creaturesData from '../../data/creatures.json';
-import type { Creature } from '../../types';
+import casesData from '../../data/cases.json';
+import type { Creature, Case } from '../../types';
 import { useContenuGerable } from '../../hooks/useContenuGerable';
 
 function slugifier(texte: string) {
@@ -23,6 +24,7 @@ export default function AdminCreatures() {
   const { liste, ajouter, modifier, supprimer, estPersonnalise } = useContenuGerable<Creature>(
     'creatures', creaturesData as Creature[]
   );
+  const { liste: cas } = useContenuGerable<Case>('cases', casesData as Case[]);
   const [edition, setEdition] = useState<Creature | null>(null);
   const [formulaireOuvert, setFormulaireOuvert] = useState(false);
 
@@ -105,6 +107,26 @@ export default function AdminCreatures() {
             <label className="formulaire-admin__plein">Histoire
               <textarea rows={3} value={edition.histoire} onChange={(e) => setEdition({ ...edition, histoire: e.target.value })} />
             </label>
+
+            <fieldset className="formulaire-admin__plein formulaire-admin__cases-liees">
+              <legend>Cas liés (dossiers similaires)</legend>
+              {cas.length === 0 && <p className="tableau-admin__meta">Aucun dossier disponible pour le moment.</p>}
+              {cas.map((c) => (
+                <label key={c.id} className="formulaire-admin__case-a-cocher">
+                  <input
+                    type="checkbox"
+                    checked={edition.casLies.includes(c.id)}
+                    onChange={(e) => {
+                      const casLies = e.target.checked
+                        ? [...edition.casLies, c.id]
+                        : edition.casLies.filter((id) => id !== c.id);
+                      setEdition({ ...edition, casLies });
+                    }}
+                  />
+                  {c.titre}
+                </label>
+              ))}
+            </fieldset>
 
             <div className="formulaire-admin__actions">
               <button type="button" className="bouton-sceau secondaire" onClick={() => setFormulaireOuvert(false)}>Annuler</button>

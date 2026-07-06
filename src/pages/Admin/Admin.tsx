@@ -8,13 +8,17 @@ import {
   faScroll,
   faPersonBooth,
   faShieldHalved,
+  faBookOpen,
+  faFeatherPointed,
 } from '@fortawesome/free-solid-svg-icons';
 import { connecter, deconnecter, sessionActive } from '../../utils/adminAuth';
+import AdminRecit from './AdminRecit';
 import AdminCreatures from './AdminCreatures';
 import AdminCases from './AdminCases';
+import AdminJournal from './AdminJournal';
 import './Admin.scss';
 
-type Onglet = 'creatures' | 'cas';
+type Onglet = 'recit' | 'creatures' | 'cas' | 'journal';
 
 export default function Admin() {
   const [session, setSession] = useState(() => sessionActive());
@@ -22,7 +26,7 @@ export default function Admin() {
   const [motDePasse, setMotDePasse] = useState('');
   const [erreur, setErreur] = useState('');
   const [enCours, setEnCours] = useState(false);
-  const [onglet, setOnglet] = useState<Onglet>('creatures');
+  const [onglet, setOnglet] = useState<Onglet>('recit');
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -92,15 +96,24 @@ export default function Admin() {
       </header>
 
       <div className="page-admin__onglets">
+        <button className={onglet === 'recit' ? 'est-actif' : ''} onClick={() => setOnglet('recit')}>
+          <FontAwesomeIcon icon={faBookOpen} /> Récit
+        </button>
         <button className={onglet === 'creatures' ? 'est-actif' : ''} onClick={() => setOnglet('creatures')}>
-          <FontAwesomeIcon icon={faScroll} /> Créatures
+          <FontAwesomeIcon icon={faScroll} /> Archives
+        </button>
+        <button className={onglet === 'journal' ? 'est-actif' : ''} onClick={() => setOnglet('journal')}>
+          <FontAwesomeIcon icon={faFeatherPointed} /> Journal Intime
         </button>
         <button className={onglet === 'cas' ? 'est-actif' : ''} onClick={() => setOnglet('cas')}>
           <FontAwesomeIcon icon={faPersonBooth} /> Cas
         </button>
       </div>
 
-      {onglet === 'creatures' ? <AdminCreatures /> : <AdminCases />}
+      {onglet === 'recit' && <AdminRecit />}
+      {onglet === 'creatures' && <AdminCreatures />}
+      {onglet === 'journal' && <AdminJournal />}
+      {onglet === 'cas' && <AdminCases />}
     </div>
   );
 }

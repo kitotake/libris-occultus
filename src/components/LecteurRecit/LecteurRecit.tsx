@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,17 +10,33 @@ import {
   faScroll,
   faFeatherPointed,
 } from '@fortawesome/free-solid-svg-icons';
-import chapitresData from '../../data/story.json';
+import storyData from '../../data/story.json';
 import type { Chapitre } from '../../types';
 import { jouerSon } from '../../utils/sound';
+import { useContenuGerable } from '../../hooks/useContenuGerable';
 import './LecteurRecit.scss';
 
-const chapitres = chapitresData as Chapitre[];
-
 export default function LecteurRecit() {
+  const { liste } = useContenuGerable<Chapitre>('story', storyData as Chapitre[]);
+  const chapitres = useMemo(() => [...liste].sort((a, b) => a.numero - b.numero), [liste]);
+
   const [indexActuel, setIndexActuel] = useState(0);
   const [sommaireOuvert, setSommaireOuvert] = useState(false);
   const [direction, setDirection] = useState<1 | -1>(1);
+
+  // Si des chapitres sont ajoutés/supprimés depuis l'administration, on
+  // ramène l'index dans les bornes valides plutôt que de planter.
+  useEffect(() => {
+    if (indexActuel > chapitres.length - 1) setIndexActuel(Math.max(0, chapitres.length - 1));
+  }, [chapitres.length, indexActuel]);
+
+  if (chapitres.length === 0) {
+    return (
+      <div className="lecteur-recit">
+        <p className="page-recit__lieu">Aucun chapitre disponible pour le moment.</p>
+      </div>
+    );
+  }
 
   const chapitre = chapitres[indexActuel];
   const estDernier = indexActuel === chapitres.length - 1;
