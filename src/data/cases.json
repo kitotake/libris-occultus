@@ -1,0 +1,66 @@
+[
+  {
+    "id": "nina-singer-emily-carter",
+    "titre": "Le Dossier Singer",
+    "lieu": "Sioux Falls, Dakota du Sud",
+    "date": "2024-10-12",
+    "statut": "Clos — Créature éliminée",
+    "creatureLiee": "djinn",
+    "victime": "Emily Carter, 20 ans, étudiante",
+    "suspectInitial": "Nina Singer, 20 ans, colocataire",
+    "resume": "Une étudiante retrouvée assassinée à coups de chandelier dans l'appartement qu'elle partageait avec Nina Singer, petite-fille de l'chasseur Bobby Singer. Toutes les preuves matérielles pointaient vers la colocataire, filmée en train de quitter puis regagner les lieux dans un état second au moment des faits.",
+    "chronologie": [
+      { "heure": "23h12", "evenement": "Bobby Singer contacte Sam et Dean Winchester : Nina est soupçonnée du meurtre de sa colocataire." },
+      { "heure": "23h50", "evenement": "Arrivée sur les lieux. Traînée de sang du salon à la chambre de Nina, chandelier couvert de sang, empreintes de pas pointure 38." },
+      { "heure": "02h47", "evenement": "Analyse de la vidéosurveillance : Nina quitte l'appartement, marche de façon saccadée, revient dix minutes plus tard." },
+      { "heure": "02h35", "evenement": "Découverte d'une vidéo envoyée par Emily à une amie avant sa mort : Nina, yeux blancs, murmurant des mots incompréhensibles." },
+      { "heure": "J+1", "evenement": "Garde à vue de Nina. Crise nocturne : yeux blancs, tentative d'agression contre Bobby. Confirmation d'une possession active." },
+      { "heure": "J+3", "evenement": "Découverte de marques de piqûres anciennes sur l'avant-bras de Nina — empoisonnement progressif par Djinn confirmé." },
+      { "heure": "J+4", "evenement": "Localisation du repaire dans un abattoir désaffecté à la sortie de la ville." },
+      { "heure": "J+4, nuit", "evenement": "Confrontation finale. Le Djinn extrait par injection, puis détruit par balles en argent. Nina libérée, mémoire fragmentée récupérée." }
+    ],
+    "notesEnquete": "Ce dossier reste l'un des plus douloureux archivés par la famille Singer. Nina a physiquement porté les coups qui ont tué Emily Carter — cela n'est pas contesté. Mais chaque élément de preuve confirme qu'elle agissait sous l'emprise directe d'un Djinn qui exploitait sa peur la plus intime : celle de devenir elle-même un monstre. Le débat reste ouvert parmi les chasseurs qui ont étudié ce cas : où s'arrête la responsabilité d'une victime possédée ? Nina elle-même n'a jamais cherché à se dédouaner. Elle vit aujourd'hui avec le souvenir complet de cette nuit.",
+    "temoignage": "« Je l'ai tuée. Je me souviens de tout maintenant. Le chandelier, ses cris. » — Nina Singer, quelques minutes après l'extraction du Djinn.",
+    "tags": ["possession", "djinn", "amnésie", "meurtre", "famille Singer"]
+  },
+  {
+    "id": "lac-miroir-1996",
+    "titre": "Les Noyées du Lac Miroir",
+    "lieu": "Comté de Kilmer, Minnesota",
+    "date": "1996-07-03",
+    "statut": "Clos — Ancre détruite",
+    "creatureLiee": "fantome",
+    "victime": "Trois adolescents retrouvés noyés en une seule nuit, aucune trace d'eau dans les poumons",
+    "suspectInitial": "Aucun — mort jugée accidentelle par les autorités locales",
+    "resume": "Un fantôme lié à une adolescente noyée en 1962 attirait chaque été des jeunes de son âge vers le lac, rejouant sa propre mort par procuration. L'ancre s'est révélée être le carnet de musique qu'elle tenait toujours contre elle.",
+    "chronologie": [
+      { "heure": "Nuit 1", "evenement": "Trois corps retrouvés sur la rive, sans eau dans les poumons ni signe de lutte." },
+      { "heure": "Jour 2", "evenement": "Découverte d'un froid anormal localisé et de perturbations EMF sur le quai abandonné." },
+      { "heure": "Jour 5", "evenement": "Identification de l'ancre : carnet manuscrit enterré près du ponton." },
+      { "heure": "Jour 6", "evenement": "Carnet salé et brûlé. Activité cessée définitivement." }
+    ],
+    "notesEnquete": "Cas classique, résolu en moins d'une semaine. Sert désormais de référence pédagogique pour les jeunes chasseurs sur l'identification rapide d'une ancre spectrale.",
+    "temoignage": "« Elle ne voulait pas nous tuer. Elle voulait juste ne plus être seule sous cette eau. »",
+    "tags": ["fantôme", "noyade", "ancre", "cas de référence"]
+  },
+  {
+    "id": "double-visage-topeka",
+    "titre": "Le Double Visage de Topeka",
+    "lieu": "Topeka, Kansas",
+    "date": "2019-02-21",
+    "statut": "Clos — Créature abattue",
+    "creatureLiee": "shapeshifter",
+    "victime": "Richard Hale, comptable, remplacé pendant cinq semaines",
+    "suspectInitial": "Aucun — la famille pensait vivre avec le vrai Richard Hale",
+    "resume": "Un métamorphe a pris la place d'un père de famille, se comportant de manière suffisamment proche de l'original pour tromper son entourage pendant plus d'un mois, avant que sa fille ne remarque des détails impossibles à imiter.",
+    "chronologie": [
+      { "heure": "Semaine 1", "evenement": "Changements mineurs de comportement rapportés par l'épouse — mis sur le compte du stress professionnel." },
+      { "heure": "Semaine 3", "evenement": "La fille de la victime remarque une cicatrice d'enfance absente sur le bras du 'père'." },
+      { "heure": "Semaine 5", "evenement": "Découverte du véritable Richard Hale, retenu vivant dans une cave, à moitié dévoré." },
+      { "heure": "Semaine 5, soir", "evenement": "Métamorphe abattu à la sortie de la maison, à la balle en argent." }
+    ],
+    "notesEnquete": "Cas remarquable par la durée de l'infiltration. Rappel que les métamorphes gardent leurs victimes vivantes tant qu'ils occupent leur identité.",
+    "temoignage": "« Il faisait tout comme papa. Sauf sourire à ma mère de la même façon. »",
+    "tags": ["métamorphe", "usurpation", "famille"]
+  }
+]

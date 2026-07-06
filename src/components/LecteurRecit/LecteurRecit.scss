@@ -1,0 +1,213 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.lecteur-recit {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 24px 90px;
+  position: relative;
+
+  &__barre {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 18px;
+    @include m.mobile { flex-wrap: wrap; }
+  }
+
+  &__sommaire-bouton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid v.$or-terni;
+    color: v.$or-vieilli;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    transition: background v.$transition-fast;
+    &:hover { background: rgba(212,175,55,0.1); }
+  }
+
+  &__progression {
+    flex: 1;
+    height: 4px;
+    background: rgba(212,175,55,0.15);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+
+  &__progression-barre {
+    height: 100%;
+    background: linear-gradient(90deg, v.$rouge-sang, v.$or-vieilli);
+    transition: width 0.4s ease;
+  }
+
+  &__compteur {
+    font-family: v.$font-hand;
+    font-size: 1.1rem;
+    color: v.$parchemin-ombre;
+    white-space: nowrap;
+  }
+
+  &__scene {
+    perspective: 1800px;
+    margin-bottom: 30px;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    @include m.mobile { flex-direction: column; }
+  }
+}
+
+.sommaire {
+  position: absolute;
+  top: 64px;
+  left: 24px;
+  right: 24px;
+  z-index: 10;
+  @include m.texture-cuir;
+  @include m.encadrement-or(1px);
+  border-radius: v.$radius-md;
+  padding: 10px;
+  max-height: 60vh;
+  overflow-y: auto;
+  box-shadow: v.$shadow-page;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  @include m.scrollbar-grimoire;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: transparent;
+    border: none;
+    text-align: left;
+    padding: 10px 12px;
+    border-radius: v.$radius-sm;
+    transition: background v.$transition-fast;
+
+    strong { display: block; color: v.$parchemin; font-size: 0.95rem; }
+    small { color: v.$parchemin-ombre; font-size: 0.75rem; }
+
+    &:hover { background: rgba(212,175,55,0.1); }
+    &.est-actif { background: rgba(212,175,55,0.18); }
+  }
+
+  &__numero {
+    flex-shrink: 0;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    border: 1px solid v.$or-terni;
+    color: v.$or-vieilli;
+    display: flex; align-items: center; justify-content: center;
+    font-family: v.$font-display;
+    font-size: 0.8rem;
+  }
+}
+
+.page-recit {
+  @include m.texture-parchemin;
+  @include m.coin-corne(bottom-right);
+  border-radius: v.$radius-md;
+  padding: 44px 48px 40px;
+  color: v.$encre;
+  box-shadow: v.$shadow-page;
+  min-height: 420px;
+  @include m.mobile { padding: 30px 24px; }
+
+  &__entete {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(60,47,47,0.25);
+
+    h1 { color: v.$cuir; font-size: 1.9rem; margin: 8px 0 6px; }
+  }
+
+  &__lieu {
+    font-family: v.$font-hand;
+    font-size: 1.2rem;
+    color: v.$rouge-sang;
+    margin: 0;
+  }
+
+  &__corps {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  &__annexes {
+    margin-top: 34px;
+    padding-top: 20px;
+    border-top: 1px dashed rgba(60,47,47,0.3);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+
+    span { color: v.$cuir-clair; font-style: italic; }
+    a {
+      color: v.$rouge-sang;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      &:hover { text-decoration: underline; }
+    }
+  }
+}
+
+.bloc-narration {
+  font-family: v.$font-body;
+  font-size: 1.12rem;
+  line-height: 1.85;
+  text-align: justify;
+  margin: 0;
+}
+
+.bloc-dialogue {
+  font-family: v.$font-body;
+  font-style: italic;
+  font-size: 1.14rem;
+  line-height: 1.7;
+  padding: 4px 0 4px 20px;
+  border-left: 3px solid v.$rouge-sang;
+  margin: 4px 0;
+
+  &__auteur {
+    font-style: normal;
+    font-weight: 700;
+    color: v.$rouge-sang;
+    margin-right: 6px;
+    em { font-weight: 400; color: v.$cuir-clair; }
+  }
+}
+
+.bloc-citation {
+  font-family: v.$font-hand;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: v.$cuir;
+  background: rgba(60,47,47,0.06);
+  border-left: 3px solid v.$or-terni;
+  padding: 16px 22px;
+  margin: 8px 0;
+}
+
+.bloc-fin {
+  text-align: center;
+  font-family: v.$font-display;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: v.$cuir;
+  margin-top: 20px;
+}

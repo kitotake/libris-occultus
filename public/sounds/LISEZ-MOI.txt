@@ -1,0 +1,8 @@
+Dépose ici tes fichiers audio pour activer les sons d'ambiance (facultatif) :
+
+- page-tourne.mp3   → joué à chaque changement de page / navigation
+- plume-gratte.mp3  → joué à l'enregistrement d'une entrée de journal
+- ambiance-grimoire.mp3 → boucle d'ambiance (non branchée par défaut, à toi de l'activer si tu veux)
+
+Sans ces fichiers, le site fonctionne normalement : les appels audio échouent
+silencieusement (voir src/utils/sound.ts).

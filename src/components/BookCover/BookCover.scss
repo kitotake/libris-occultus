@@ -1,0 +1,97 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.couverture {
+  position: fixed;
+  inset: 0;
+  z-index: v.$z-page-overlay;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at center, #1c150c 0%, v.$noir-profond 70%);
+
+  &__livre {
+    position: relative;
+    width: min(420px, 82vw);
+    height: min(580px, 76vh);
+    perspective: 1600px;
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  &__interieur {
+    position: absolute;
+    inset: 0;
+    @include m.texture-parchemin;
+    border-radius: v.$radius-lg;
+    z-index: 0;
+  }
+
+  &__face {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    @include m.texture-cuir;
+    @include m.encadrement-or(2px);
+    border-radius: v.$radius-lg;
+    box-shadow: v.$shadow-page;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    backface-visibility: hidden;
+  }
+
+  &__ornement {
+    width: 70%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, v.$or-terni, transparent);
+    &--haut { position: absolute; top: 44px; }
+    &--bas { position: absolute; bottom: 70px; }
+  }
+
+  &__icone {
+    font-size: 3.4rem;
+    color: v.$rouge-sang-clair;
+    filter: drop-shadow(0 0 14px rgba(139,0,0,0.6));
+  }
+
+  &__titre {
+    font-family: v.$font-display;
+    font-size: 2.1rem;
+    text-align: center;
+    line-height: 1.15;
+    color: v.$or-vieilli;
+  }
+
+  &__sous-titre {
+    font-family: v.$font-hand;
+    font-size: 1.2rem;
+    color: v.$parchemin-ombre;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  &__instruction {
+    position: absolute;
+    bottom: 28px;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: v.$parchemin-ombre;
+    opacity: 0.75;
+    animation: pulser 2.4s ease-in-out infinite;
+  }
+}
+
+@keyframes pulser {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.9; }
+}
+
+@include m.respect-motion-reduite {
+  .couverture__instruction { animation: none !important; }
+}

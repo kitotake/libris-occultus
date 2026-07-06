@@ -1,0 +1,125 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: v.$noir-profond;
+  background-image:
+    radial-gradient(ellipse at top, #1c150c 0%, v.$noir-profond 55%),
+    repeating-linear-gradient(0deg, rgba(0,0,0,0.15) 0 2px, transparent 2px 4px);
+  color: v.$parchemin;
+  font-family: v.$font-body;
+  font-size: 17px;
+  line-height: 1.65;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  @include m.scrollbar-grimoire;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: v.$font-display;
+  color: v.$or-vieilli;
+  letter-spacing: 0.03em;
+  margin: 0;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+}
+
+a {
+  color: v.$or-vieilli;
+  text-decoration: none;
+  @include m.focus-ring;
+}
+
+button {
+  font-family: v.$font-body;
+  cursor: pointer;
+  @include m.focus-ring;
+}
+
+::selection {
+  background: v.$rouge-sang;
+  color: v.$parchemin;
+}
+
+.conteneur {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+  margin-bottom: 25px;
+  @include m.mobile { padding: 0 18px; }
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: v.$font-hand;
+  font-size: 1.15rem;
+  color: v.$rouge-sang-clair;
+  letter-spacing: 0.04em;
+  &::before, &::after {
+    content: '✦';
+    font-size: 0.7rem;
+    color: v.$or-terni;
+    opacity: 0.7;
+  }
+}
+
+.bouton-sceau {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 26px;
+  background: linear-gradient(180deg, v.$rouge-sang-clair, v.$rouge-sang);
+  color: v.$parchemin;
+  border: 1px solid rgba(212,175,55,0.4);
+  border-radius: v.$radius-md;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  box-shadow: 0 6px 18px rgba(139,0,0,0.35);
+  transition: transform v.$transition-fast, box-shadow v.$transition-fast;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(139,0,0,0.5);
+  }
+  &:active { transform: translateY(0); }
+
+  &.secondaire {
+    background: transparent;
+    border: 1px solid v.$or-terni;
+    color: v.$or-vieilli;
+    box-shadow: none;
+    &:hover { background: rgba(212,175,55,0.08); }
+  }
+}
+
+.badge-danger {
+  display: inline-flex;
+  gap: 3px;
+  span {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: rgba(139,0,0,0.25);
+    &.actif { background: v.$rouge-sang-clair; box-shadow: 0 0 6px v.$rouge-sang-clair; }
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}

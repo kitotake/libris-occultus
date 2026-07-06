@@ -1,0 +1,147 @@
+[
+  {
+    "id": "djinn",
+    "nom": "Djinn",
+    "sousTitre": "Le Marchand de Cauchemars",
+    "categorie": "Entité",
+    "dangerosite": 5,
+    "anneePremiereApparition": 1998,
+    "image": "https://placehold.co/600x800/0f0c08/d4af37?text=Djinn&font=playfair-display",
+    "description": "Fidèle à ce que les chasseurs consignent depuis les premiers cas documentés : le Djinn ne tue jamais à la lame ou à la griffe. D'un simple contact de la main — souvent posée sur le front ou l'avant-bras — il injecte un venin qui plonge sa victime dans un état de transe prolongée. Certains Djinns anciens offraient un monde-rêve à l'image du vœu le plus cher de la proie ; les lignées plus récentes, corrompues, exploitent plutôt sa peur la plus profonde, la retournant contre elle pour la pousser à agir dans le monde réel pendant que le corps reste en transe. Dans les deux cas, le Djinn se nourrit lentement de l'énergie vitale ou du sang de sa victime jusqu'à l'épuiser.",
+    "signes": [
+      "Marque bleutée ou piqûre rougeâtre là où le contact a eu lieu — front, nuque ou avant-bras",
+      "Pertes de mémoire progressives et trous noirs de plusieurs heures",
+      "Yeux qui deviennent brièvement blancs ou laiteux lors des épisodes de transe active",
+      "Cauchemars ou visions d'une précision anormale, nuit après nuit, centrés sur une même peur",
+      "Comportements violents inexpliqués suivis d'amnésie totale ou partielle",
+      "Le Djinn lui-même, sous sa forme véritable, a la peau bleu-gris et les yeux luisants — rarement vu, car il évite le contact direct une fois le venin injecté"
+    ],
+    "faiblesses": [
+      "Lame trempée dans le sang d'agneau (ou dans le propre sang du Djinn) — seule arme confirmée capable de le tuer",
+      "La transe doit être rompue avant que la fusion psychique ne devienne irréversible, en général sous 72 heures",
+      "Vulnérable au moment où il maintient activement le lien avec l'esprit de sa victime",
+      "Doit rester relativement proche de ses proies en cours d'absorption pour ne pas perdre le lien"
+    ],
+    "histoire": "Documenté pour la première fois dans le folklore mésopotamien puis largement déformé par la culture populaire, le Djinn tel que les chasseurs le rencontrent n'a rien de la figure du vœu exaucé façon conte de fées. Les carnets de la famille Singer distinguent deux lignées : les Djinns « classiques », qui accordent un rêve désiré tout en drainant lentement leur proie, et une souche plus récente et plus cruelle, qui retourne les peurs contre la victime elle-même. Le dossier le plus documenté du réseau — le Dossier Singer — appartient à cette seconde catégorie : une victime jeune, une phase de manipulation de plusieurs semaines, puis un acte de violence dont la victime ne garde qu'un souvenir fragmenté.",
+    "casLies": ["nina-singer-emily-carter"]
+  },
+  {
+    "id": "wendigo",
+    "nom": "Wendigo",
+    "sousTitre": "La Faim qui Marche",
+    "categorie": "Créature",
+    "dangerosite": 4,
+    "anneePremiereApparition": 1859,
+    "image": "https://placehold.co/600x800/0f0c08/d4af37?text=Wendigo&font=playfair-display",
+    "description": "Autrefois humain, transformé par un acte de cannibalisme extrême, le Wendigo gagne à chaque repas une force et une vitesse qui dépassent largement l'humain — il se déplace si vite qu'il n'apparaît souvent que comme un flou entre les arbres. Il n'a pas besoin de se nourrir souvent : entre deux repas, il peut hiberner des années, parfois des décennies, dans une tanière souterraine. Il conserve ses victimes vivantes, suspendues, pour se nourrir sur elles pendant des jours.",
+    "signes": [
+      "Voix connues et familières entendues en pleine forêt, appelant depuis des directions changeantes — le Wendigo imite ses proies passées pour attirer les nouvelles",
+      "Disparitions concentrées près de forêts isolées, souvent espacées de plusieurs années entre deux séries d'attaques (période d'hibernation)",
+      "Déplacements impossibles à suivre à l'œil nu, silhouette entraperçue comme un flou",
+      "Griffures profondes sur les troncs d'arbres à hauteur inhabituelle",
+      "Odeur de chair brûlée ou de pourriture sans source visible près de son repaire"
+    ],
+    "faiblesses": [
+      "Le feu — seule méthode confirmée pour le détruire définitivement, une flèche ou un cocktail incendiaire suffisent",
+      "Ne sort quasiment jamais en plein jour, reste près de sa tanière souterraine",
+      "Un humain encore en début de transformation peut parfois être sauvé s'il est extrait à temps"
+    ],
+    "histoire": "Les tribus algonquines en parlaient comme d'un esprit de la faim et de l'hiver, punition pour avoir rompu le tabou ultime du cannibalisme. Les chasseurs modernes le croisent surtout dans les parcs nationaux reculés du nord des États-Unis et du Canada — Blackwater Ridge en Alaska reste le cas le plus documenté du réseau — où des randonneurs disparaissent par vagues, avec de longues périodes de silence entre chaque série d'attaques.",
+    "casLies": []
+  },
+  {
+    "id": "shapeshifter",
+    "nom": "Métamorphe",
+    "sousTitre": "Le Visage Volé",
+    "categorie": "Entité",
+    "dangerosite": 3,
+    "anneePremiereApparition": 1974,
+    "image": "https://placehold.co/600x800/0f0c08/d4af37?text=Shapeshifter&font=playfair-display",
+    "description": "Espèce à part, distincte des simples illusions démoniaques, le métamorphe absorbe l'apparence exacte d'un humain après l'avoir tué ou longuement approché — un contact suffit parfois à capter une empreinte partielle et temporaire. Une fois la forme prise, il s'infiltre dans la vie de sa victime pour la remplacer intégralement : carrière, famille, relations. Il doit se nourrir régulièrement de viande crue ou de chair humaine pour maintenir la forme volée, et mue par périodes, laissant derrière lui une peau translucide et visqueuse.",
+    "signes": [
+      "Deux personnes identiques rapportées au même endroit à des moments rapprochés",
+      "Comportement erratique et hors caractère chez une personne de confiance",
+      "Yeux qui reflètent la lumière comme ceux d'un animal nocturne sur les enregistrements vidéo ou photo — signe le plus fiable pour l'identifier",
+      "Traces de mue : peau translucide et gluante retrouvée près d'un repaire ou d'un lieu de changement de forme",
+      "La victime originale, si elle n'a pas encore été tuée, est généralement retenue vivante, affaiblie, dans un lieu isolé"
+    ],
+    "faiblesses": [
+      "Balle en argent tirée au cœur — la seule munition qui l'empêche de se régénérer",
+      "Doit se nourrir de viande crue ou de chair humaine régulièrement pour maintenir une forme volée",
+      "Ne peut pas imiter les souvenirs intimes ou les habitudes qu'il n'a pas directement observés chez sa victime"
+    ],
+    "histoire": "Le plus ancien cas documenté par le réseau des chasseurs date de 1974 dans le Missouri, où un métamorphe avait remplacé un père de famille pendant près de six mois avant d'être découvert par sa propre fille — la victime originale, retenue vivante dans une cave, a survécu de justesse.",
+    "casLies": []
+  },
+  {
+    "id": "fantome",
+    "nom": "Fantôme",
+    "sousTitre": "L'Écho qui Reste",
+    "categorie": "Esprit",
+    "dangerosite": 2,
+    "anneePremiereApparition": null,
+    "image": "https://placehold.co/600x800/0f0c08/d4af37?text=Fant%C3%B4me&font=playfair-display",
+    "description": "Résidu psychique d'une mort violente ou d'un attachement extrême à un lieu ou un objet, le fantôme rejoue indéfiniment les circonstances de sa fin — ou de son injustice — jusqu'à ce que son ancre matérielle soit détruite. La plupart sont inoffensifs, mais certains, corrompus par la rage ou le chagrin, deviennent des poltergeists violents.",
+    "signes": [
+      "Chute soudaine de température, détecteur EMF (champ électromagnétique) qui s'affole à son approche",
+      "Objets qui se déplacent seuls, portes qui claquent, interférences électriques",
+      "Apparitions brèves, souvent en périphérie du champ de vision",
+      "Odeurs associées au décès (fumée, sang, parfum d'une époque révolue)"
+    ],
+    "faiblesses": [
+      "Sel — repousse temporairement, bloque le passage",
+      "Fer — traverse et blesse la forme spectrale",
+      "Destruction de l'ancre (os, objet personnel) par le sel et le feu — seule solution permanente"
+    ],
+    "histoire": "Le cas le plus récent rencontré par les frères Winchester concernait un fantôme routier sur la Route 14 près de Sioux Falls, une nuit d'octobre — celle-là même où l'appel de Bobby au sujet de Nina allait tout changer.",
+    "casLies": []
+  },
+  {
+    "id": "vampire",
+    "nom": "Vampire",
+    "sousTitre": "Le Nid Silencieux",
+    "categorie": "Créature",
+    "dangerosite": 4,
+    "anneePremiereApparition": 1897,
+    "image": "https://placehold.co/600x800/0f0c08/d4af37?text=Vampire&font=playfair-display",
+    "description": "Contrairement au folklore, le soleil ne leur fait rien : les vampires chassent aussi bien en plein jour qu'à la nuit tombée. Ils vivent en nids hiérarchisés, gardent leurs proies humaines comme un cheptel — nourries, droguées, à peine conscientes — pour se nourrir d'elles sans les tuer, prélèvement après prélèvement. Un humain devient vampire uniquement s'il est forcé à ingérer du sang de vampire ; il ne se transforme jamais par simple morsure.",
+    "signes": [
+      "Corps retrouvés vidés d'une grande partie de leur sang, deux perforations discrètes au cou, sans autre blessure",
+      "Dents rétractables, invisibles hors de l'attaque",
+      "Repaire organisé en nid : plusieurs individus, hiérarchie stricte autour d'un chef, humains captifs gardés en réserve",
+      "Activité aussi bien diurne que nocturne autour d'un même quartier, entrepôt ou grange isolée"
+    ],
+    "faiblesses": [
+      "Décapitation — seule méthode confirmée garantissant la mort définitive",
+      "Le sang de mort-vivant (dead man's blood) agit comme un poison paralysant, utile pour les neutraliser sans les tuer",
+      "La morsure seule ne transmet rien : seule l'ingestion forcée de sang de vampire transforme un humain",
+      "Aucune vulnérabilité au soleil, à l'ail ou aux crucifix — ces croyances populaires sont sans fondement"
+    ],
+    "histoire": "Le réseau de nids le plus vaste jamais démantelé remonte à 1897 dans le Colorado, un massacre ferroviaire longtemps attribué à tort à des loups. Les vampires restent l'une des rares espèces à privilégier la survie de leurs proies sur leur mort : un nid bien organisé peut se nourrir du même cheptel humain pendant des années sans être repéré.",
+    "casLies": []
+  },
+  {
+    "id": "rugaru",
+    "nom": "Rugaru",
+    "sousTitre": "Celui qui Résiste à la Faim",
+    "categorie": "Humain corrompu",
+    "dangerosite": 4,
+    "anneePremiereApparition": 2009,
+    "image": "https://placehold.co/600x800/0f0c08/d4af37?text=Rugaru&font=playfair-display",
+    "description": "Le Rugaru naît humain — c'est ce qui le rend si difficile à repérer, et si proche du cas Singer. Porteur d'un trait génétique dormant, il peut vivre toute sa vie sans jamais développer sa condition, tant qu'il évite un déclencheur précis : goûter à la chair humaine, même une seule fois, souvent sans le savoir. Une fois le seuil franchi, la faim devient incontrôlable et progressive, jusqu'à la transformation complète en prédateur cannibale doté d'une force et d'une résistance largement supérieures à l'humaine.",
+    "signes": [
+      "Faim soudaine et insatiable, particulièrement pour la viande crue ou saignante",
+      "Accès de rage ou de violence incontrôlée, suivis de honte et de confusion — la personne se sait changer sans se reconnaître",
+      "Guérison anormalement rapide de blessures mineures à mesure que la transformation avance",
+      "Cauchemars récurrents de cannibalisme, parfois prémonitoires de ses propres actes"
+    ],
+    "faiblesses": [
+      "Le feu — seule méthode confirmée pour tuer un Rugaru pleinement transformé",
+      "Avant la transformation complète, la volonté de la personne compte encore : certains résistent au trait toute leur vie",
+      "Une fois le stade final atteint, la transformation est irréversible — il n'existe aucun remède connu"
+    ],
+    "histoire": "Longtemps confondu avec de simples tueurs en série cannibales avant que les chasseurs n'identifient le trait génétique en cause. Le Rugaru occupe une place particulière dans les carnets du réseau : c'est la seule créature dont l'origine est purement humaine, sans possession, sans malédiction extérieure — seulement une prédisposition et un instant de faiblesse. Les chasseurs qui ont étudié le Dossier Singer y voient souvent un écho troublant : la peur de devenir soi-même le monstre, sans y avoir jamais consenti.",
+    "casLies": []
+  }
+]
+

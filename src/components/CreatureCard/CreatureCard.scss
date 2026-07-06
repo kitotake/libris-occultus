@@ -1,0 +1,54 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.fiche-creature {
+  display: block;
+  @include m.texture-cuir;
+  @include m.encadrement-or(1px);
+  @include m.coin-corne(bottom-right);
+  border-radius: v.$radius-md;
+  overflow: hidden;
+  transition: transform v.$transition-fast, box-shadow v.$transition-fast;
+
+  &:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 16px 34px rgba(0,0,0,0.55);
+  }
+
+  &__image {
+    height: 210px;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid rgba(212,175,55,0.35);
+    filter: sepia(0.35) contrast(1.05);
+  }
+
+  &__corps {
+    padding: 18px 20px 22px;
+  }
+
+  &__categorie {
+    font-family: v.$font-hand;
+    font-size: 1.05rem;
+    color: v.$rouge-sang-clair;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    margin: 6px 0 4px;
+  }
+
+  &__soustitre {
+    color: v.$parchemin-ombre;
+    font-size: 0.86rem;
+    margin: 0 0 12px;
+    font-style: italic;
+  }
+
+  &__danger {
+    display: flex;
+    gap: 5px;
+    svg { font-size: 0.78rem; color: rgba(212,175,55,0.2); }
+    svg.active { color: v.$rouge-sang-clair; }
+  }
+}

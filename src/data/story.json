@@ -1,0 +1,126 @@
+[
+  {
+    "id": "chapitre-1",
+    "numero": 1,
+    "titre": "L’Appel de Bobby",
+    "lieuDate": "Sioux Falls, 23h12",
+    "blocs": [
+      { "type": "narration", "texte": "Le téléphone de Dean sonna alors qu’ils venaient de finir un cas de fantôme routier. La voix de Bobby était plus rauque que d’habitude." },
+      { "type": "dialogue", "auteur": "Bobby", "texte": "Les garçons… c’est Nina. Ma petite-fille. Sa colocataire est morte. Ils disent que c’est elle qui a fait le coup." },
+      { "type": "narration", "texte": "Sam et Dean prirent la route immédiatement. Nina Singer, 20 ans, était la seule famille qui restait vraiment à Bobby. Une étudiante brillante, un peu sauvage, qui avait toujours refusé d’entrer dans le monde de la chasse." },
+      { "type": "narration", "texte": "Quand ils arrivèrent devant l’immeuble, les gyrophares des voitures de police éclairaient encore la façade. Le corps d’Emily Carter avait déjà été emmené, mais le sang était toujours là." }
+    ]
+  },
+  {
+    "id": "chapitre-2",
+    "numero": 2,
+    "titre": "Les Indices",
+    "lieuDate": "Appartement de Nina Singer",
+    "blocs": [
+      { "type": "narration", "texte": "L’appartement était glacé." },
+      { "type": "narration", "texte": "Une longue traînée de sang partait du salon jusqu’à la chambre de Nina. Le chandelier en métal lourd gisait sur le sol, couvert de sang et d’empreintes. Les traces de pas dans le sang étaient nettes : pointure 38." },
+      { "type": "narration", "texte": "Dean examina la caméra de sécurité de l’immeuble sur son ordinateur portable." },
+      { "type": "dialogue", "auteur": "Dean", "texte": "02h47. Regarde ça." },
+      { "type": "narration", "texte": "On voyait Nina sortir de l’appartement, marcher lentement dans le couloir, puis… revenir dix minutes plus tard. Sauf que sa démarche était bizarre, saccadée, comme si elle n’était pas vraiment elle-même." },
+      { "type": "narration", "texte": "Dans la chambre de Nina, Sam trouva le journal intime caché sous l’oreiller." },
+      { "type": "citation", "texte": "Je me réveille avec du sang. Emily me regarde comme si j’étais un monstre. J’ai peur de ce que je suis en train de devenir." },
+      { "type": "narration", "texte": "Et sur le téléphone d’Emily, une vidéo envoyée à une amie à 02h35 : Nina debout au milieu du salon, yeux complètement blancs, murmurant des mots incompréhensibles." }
+    ]
+  },
+  {
+    "id": "chapitre-3",
+    "numero": 3,
+    "titre": "Nina",
+    "lieuDate": "Poste de police, salle d’interrogatoire",
+    "blocs": [
+      { "type": "narration", "texte": "Ils retrouvèrent Nina au poste de police, en garde à vue. Elle semblait vide, épuisée." },
+      { "type": "narration", "texte": "Quand Bobby entra dans la salle d’interrogatoire, elle craqua." },
+      { "type": "dialogue", "auteur": "Nina", "note": "voix tremblante", "texte": "Je ne me souviens pas… J’ai vu Emily morte et… j’avais le chandelier dans les mains. Il y avait quelqu’un d’autre dans ma tête, papi. Je te jure." },
+      { "type": "narration", "texte": "Sam lui montra la vidéo. Nina devint livide." },
+      { "type": "dialogue", "auteur": "Nina", "texte": "Ce n’est pas moi… Ce n’est pas moi !" },
+      { "type": "narration", "texte": "Dean, adossé au mur, croisa les bras." },
+      { "type": "dialogue", "auteur": "Dean", "texte": "On a déjà vu ça. Possession. Djinn. Shapeshifter. On va trouver ce que c’est. Mais en attendant… on te sort d’ici." },
+      { "type": "narration", "texte": "Cette nuit-là, Nina fit une crise. Ses yeux devinrent blancs pendant quelques secondes et elle tenta d’étrangler Bobby. Ils comprirent que le temps était compté." }
+    ]
+  },
+  {
+    "id": "chapitre-4",
+    "numero": 4,
+    "titre": "La Traque",
+    "lieuDate": "Sous-sol de Bobby Singer",
+    "blocs": [
+      { "type": "narration", "texte": "Dans le sous-sol de Bobby, les recherches allèrent bon train." },
+      { "type": "narration", "texte": "Sam découvrit des traces de djinn : des marques anciennes sur le bras de Nina, presque invisibles. Elle avait été empoisonnée lentement depuis plusieurs semaines. Le djinn se nourrissait de sa peur la plus profonde : devenir un monstre comme ceux que sa famille chassait." },
+      { "type": "dialogue", "auteur": "Bobby", "texte": "Elle voulait juste être normale… Et cette saloperie en a profité." },
+      { "type": "narration", "texte": "Dean trouva l’entrepôt où le djinn se terrait probablement : un ancien abattoir à la sortie de la ville, là où les cauchemars de Nina semblaient toujours se dérouler." },
+      { "type": "narration", "texte": "Ils préparèrent les armes : sang de mouton purifié, balles en argent, lame gravée. Nina insista pour venir." },
+      { "type": "dialogue", "auteur": "Nina", "texte": "Si je dois mourir… je veux que ce soit en finissant ça moi-même." }
+    ],
+    "creatureLiee": "djinn"
+  },
+  {
+    "id": "chapitre-5",
+    "numero": 5,
+    "titre": "Dans la Tête du Monstre",
+    "lieuDate": "Ancien abattoir, sortie de Sioux Falls",
+    "blocs": [
+      { "type": "narration", "texte": "L’entrepôt était un piège." },
+      { "type": "narration", "texte": "Le djinn les attendait. Il prit successivement l’apparence d’Emily, puis de la mère de Sam et Dean, puis enfin celle de Nina elle-même, essayant de les diviser." },
+      { "type": "dialogue", "auteur": "Djinn", "note": "sous les traits de Nina", "texte": "Elle a aimé tuer. Au fond d’elle, elle est comme vous. Une tueuse." },
+      { "type": "narration", "texte": "Sam et Dean se battaient contre des illusions pendant que Bobby tentait de rejoindre la vraie Nina, attachée au centre d’un cercle rituel." },
+      { "type": "narration", "texte": "Le combat fut violent. Dean fut blessé au flanc. Sam reçut un coup qui le projeta contre un mur. Mais ils tinrent bon." }
+    ],
+    "creatureLiee": "djinn"
+  },
+  {
+    "id": "chapitre-6",
+    "numero": 6,
+    "titre": "La Piste Numérique",
+    "lieuDate": "Chez Bobby, 3h du matin",
+    "blocs": [
+      { "type": "narration", "texte": "Après l’affrontement dans l’entrepôt, Nina ne dormait plus. Les souvenirs du meurtre d’Emily la hantaient chaque nuit. Elle voulait comprendre comment le Djinn l’avait manipulée pendant des semaines." },
+      { "type": "dialogue", "auteur": "Nina", "note": "devant son ordinateur", "texte": "Si cette chose m’a trouvée en ligne… je dois savoir comment." },
+      { "type": "narration", "texte": "Bobby lui avait interdit de replonger seule, mais elle n’écoutait plus. Elle ouvrit son navigateur et tapa frénétiquement dans la barre de recherche." },
+      { "type": "narration", "texte": "Elle tomba sur un site underground qu’elle avait déjà vu une fois sur le dark web des chasseurs : « Libris Occultus » — un site à l’apparence de vieux journal relié en cuir. Le site ressemblait à un grimoire numérique vivant. Les pages tournaient avec des effets de papier ancien, les entrées de journal défilaient comme des feuilles manuscrites, et les archives sur les Djinns, Wendigos, Métamorphes et Fantômes étaient classées par année et par victime." },
+      { "type": "narration", "texte": "Nina passa des heures à naviguer. Elle utilisa la section « Témoignages & Possessions » et trouva plusieurs cas similaires au sien : des jeunes femmes qui avaient commis des meurtres sans s’en souvenir, avec des trous de mémoire et des traces de sang sur les mains." },
+      { "type": "narration", "texte": "Elle prit des captures d’écran, nota les rituels de purification et surtout : elle trouva un ancien article sur la marque djinn qu’elle portait sur l’avant-bras." },
+      { "type": "dialogue", "auteur": "Nina", "note": "murmurant", "texte": "C’est là qu’il est entré… par mes cauchemars en ligne." },
+      { "type": "narration", "texte": "Sam entra dans la pièce et la trouva encore devant l’écran, les yeux rouges." },
+      { "type": "dialogue", "auteur": "Sam", "texte": "Nina… tu ne devrais pas être seule sur ce genre de site." },
+      { "type": "dialogue", "auteur": "Nina", "texte": "Il fallait que je sache. Ce site… il est fait comme un journal intime géant. C’est exactement comme le mien. C’est comme s’il m’avait attendue." }
+    ],
+    "creatureLiee": "djinn",
+    "estRupture": true
+  },
+  {
+    "id": "chapitre-final",
+    "numero": 7,
+    "titre": "Le Sang ne Ment Pas",
+    "sousTitre": "Scène finale",
+    "lieuDate": "Ancien abattoir, avant l’aube",
+    "blocs": [
+      { "type": "narration", "texte": "L’entrepôt était plongé dans le chaos. Les chaînes qui retenaient Nina claquaient contre le sol tandis que son corps se tordait sous l’effet du djinn." },
+      { "type": "dialogue", "auteur": "Djinn-Nina", "note": "voix monstrueuse", "texte": "Elle m’a invitée ! Elle voulait être forte ! Elle a frappé Emily jusqu’à ce que son crâne se brise !" },
+      { "type": "narration", "texte": "Bobby, les yeux pleins de larmes de rage, posa son fusil." },
+      { "type": "dialogue", "auteur": "Bobby", "texte": "C’est ma gamine. Et tu vas sortir de sa tête." },
+      { "type": "narration", "texte": "Sam planta l’aiguille dans le cou de Nina. Le hurlement qui suivit fut déchirant. Le djinn s’extirpa de son corps sous forme de fumée noire épaisse." },
+      { "type": "narration", "texte": "Dean vida son chargeur en argent dans la créature qui explosa dans une gerbe de flammes et de cendres." },
+      { "type": "narration", "texte": "Le silence retomba." },
+      { "type": "narration", "texte": "Nina, revenue à elle, pleurait silencieusement. Du sang coulait de son nez et de ses oreilles." },
+      { "type": "dialogue", "auteur": "Nina", "note": "murmure brisé", "texte": "Je l’ai tuée… Je me souviens de tout maintenant. Le chandelier… ses cris… J’ai écrit « Nina m’a tuée » sur le mur avec son sang." },
+      { "type": "narration", "texte": "Bobby s’agenouilla devant elle et prit son visage entre ses mains." },
+      { "type": "dialogue", "auteur": "Bobby", "texte": "C’était pas toi. Tu m’entends ? Ce monstre t’a volé ton corps, mais pas ton âme. Tu es toujours ma Nina." },
+      { "type": "narration", "texte": "Dean, appuyé contre un mur, une main sur sa blessure, hocha la tête." },
+      { "type": "dialogue", "auteur": "Dean", "texte": "On a tous du sang sur les mains, gamine. L’important, c’est ce qu’on fait après." },
+      { "type": "narration", "texte": "Sam posa une couverture sur les épaules de Nina." },
+      { "type": "dialogue", "auteur": "Sam", "texte": "On va t’aider à vivre avec ça. Comme on le fait tous les jours." },
+      { "type": "narration", "texte": "Nina ferma les yeux et murmura :" },
+      { "type": "dialogue", "auteur": "Nina", "texte": "Dites à Emily… que je suis désolée. Et que je ne l’oublierai jamais." },
+      { "type": "narration", "texte": "Bobby la serra contre lui tandis que les premiers rayons du soleil filtraient à travers les vitres brisées de l’entrepôt." },
+      { "type": "narration", "texte": "Pour la première fois depuis longtemps, le vieux chasseur pleura." },
+      { "type": "fin", "texte": "Fin." }
+    ],
+    "creatureLiee": "djinn",
+    "casLie": "nina-singer-emily-carter"
+  }
+]

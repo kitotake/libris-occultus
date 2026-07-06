@@ -1,0 +1,86 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.page-recherche {
+  padding: 56px 32px 100px;
+  max-width: 900px;
+
+  &__barre {
+    margin: 28px 0 36px;
+  }
+
+  &__filtres {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+
+    button {
+      padding: 7px 16px;
+      border-radius: 999px;
+      border: 1px solid v.$or-terni;
+      background: transparent;
+      color: v.$parchemin-ombre;
+      font-size: 0.85rem;
+      transition: all v.$transition-fast;
+      &:hover { background: rgba(212,175,55,0.1); }
+      &.est-actif { background: v.$or-vieilli; color: v.$noir-profond; border-color: v.$or-vieilli; font-weight: 600; }
+    }
+  }
+
+  &__invite {
+    color: v.$parchemin-ombre;
+    font-family: v.$font-hand;
+    font-size: 1.3rem;
+    padding: 30px 0;
+  }
+
+  &__section {
+    margin-bottom: 32px;
+    h2 { font-size: 1.05rem; display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
+  }
+
+  &__resultats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    @include m.mobile { grid-template-columns: 1fr; }
+  }
+}
+
+.champ-recherche {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  @include m.texture-cuir;
+  @include m.encadrement-or(1px);
+  border-radius: v.$radius-md;
+  padding: 14px 20px;
+
+  svg { color: v.$or-terni; font-size: 1.1rem; }
+
+  input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: v.$parchemin;
+    font-size: 1.05rem;
+    font-family: v.$font-body;
+    &:focus { outline: none; }
+    &::placeholder { color: rgba(245,232,199,0.4); }
+  }
+}
+
+.resultat-recherche {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 18px;
+  border-radius: v.$radius-sm;
+  background: rgba(212,175,55,0.06);
+  border: 1px solid rgba(212,175,55,0.22);
+  transition: background v.$transition-fast;
+
+  strong { color: v.$or-vieilli; }
+  span { font-size: 0.85rem; color: v.$parchemin-ombre; }
+  &:hover { background: rgba(212,175,55,0.13); }
+}

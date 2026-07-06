@@ -1,0 +1,25 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.texture {
+  position: relative;
+  isolation: isolate;
+
+  &--parchemin {
+    @include m.texture-parchemin;
+    color: v.$encre;
+  }
+
+  &--cuir {
+    @include m.texture-cuir;
+    color: v.$parchemin;
+  }
+
+  &__vignette {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    box-shadow: v.$shadow-inset;
+    z-index: 1;
+  }
+}

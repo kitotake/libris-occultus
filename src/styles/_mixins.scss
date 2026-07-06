@@ -1,0 +1,76 @@
+@use 'variables' as v;
+
+// Texture de papier ancien via bruit SVG en data-uri + dégradés superposés
+@mixin texture-parchemin {
+  background-color: v.$parchemin;
+  background-image:
+    radial-gradient(ellipse at 20% 20%, rgba(255,255,255,0.15), transparent 60%),
+    radial-gradient(ellipse at 80% 70%, rgba(139,69,19,0.12), transparent 55%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E");
+}
+
+@mixin texture-cuir {
+  background-color: v.$cuir;
+  background-image:
+    radial-gradient(ellipse at 30% 30%, rgba(255,255,255,0.06), transparent 60%),
+    linear-gradient(135deg, rgba(0,0,0,0.35), transparent 50%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.05' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.18'/%3E%3C/svg%3E");
+}
+
+@mixin coin-corne($position: bottom-right) {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background: linear-gradient(135deg, transparent 50%, rgba(0,0,0,0.18) 50%);
+    pointer-events: none;
+    @if $position == bottom-right {
+      bottom: 0; right: 0;
+      border-radius: 0 0 v.$radius-md 0;
+    } @else if $position == top-left {
+      top: 0; left: 0;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@mixin encadrement-or($width: 1px) {
+  border: $width solid v.$or-terni;
+  box-shadow:
+    0 0 0 1px rgba(212, 175, 55, 0.15),
+    inset 0 0 12px rgba(212, 175, 55, 0.06);
+}
+
+@mixin focus-ring {
+  &:focus-visible {
+    outline: 2px solid v.$or-vieilli;
+    outline-offset: 3px;
+    border-radius: v.$radius-sm;
+  }
+}
+
+@mixin scrollbar-grimoire {
+  &::-webkit-scrollbar { width: 10px; }
+  &::-webkit-scrollbar-track { background: v.$noir-profond-2; }
+  &::-webkit-scrollbar-thumb {
+    background: v.$or-terni;
+    border-radius: 6px;
+    border: 2px solid v.$noir-profond-2;
+  }
+}
+
+@mixin respect-motion-reduite {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 720px) { @content; }
+}
+
+@mixin tablette {
+  @media (max-width: 1024px) { @content; }
+}

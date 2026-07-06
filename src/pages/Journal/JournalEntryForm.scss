@@ -1,0 +1,90 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.formulaire-journal {
+  @include m.texture-cuir;
+  @include m.encadrement-or(1px);
+  border-radius: v.$radius-lg;
+  padding: 30px 34px;
+  max-width: 560px;
+  width: 100%;
+  max-height: 88vh;
+  overflow-y: auto;
+  box-shadow: v.$shadow-page;
+  @include m.scrollbar-grimoire;
+
+  &__entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    h2 { font-size: 1.15rem; display: flex; align-items: center; gap: 10px; }
+  }
+
+  &__fermer {
+    background: transparent;
+    border: none;
+    color: v.$parchemin-ombre;
+    font-size: 1.1rem;
+    &:hover { color: v.$rouge-sang-clair; }
+  }
+
+  &__erreur {
+    background: rgba(139,0,0,0.15);
+    border: 1px solid v.$rouge-sang;
+    color: v.$parchemin;
+    padding: 10px 14px;
+    border-radius: v.$radius-sm;
+    font-size: 0.88rem;
+    margin-bottom: 16px;
+  }
+
+  &__ligne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+    @include m.mobile { grid-template-columns: 1fr; }
+  }
+
+  &__champ-plein {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: v.$parchemin-ombre;
+  }
+
+  input[type="text"], input:not([type]), select, textarea {
+    background: rgba(15,12,8,0.55);
+    border: 1px solid v.$or-terni;
+    border-radius: v.$radius-sm;
+    padding: 10px 12px;
+    color: v.$parchemin;
+    font-family: v.$font-body;
+    font-size: 0.98rem;
+    resize: vertical;
+    @include m.focus-ring;
+  }
+
+  &__epingle {
+    flex-direction: row !important;
+    align-items: center;
+    gap: 8px !important;
+    margin-bottom: 24px;
+    cursor: pointer;
+    input { width: auto; }
+    svg { color: v.$rouge-sang-clair; }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "entry-nina-01",
+    "auteur": "Nina Singer",
+    "date": "2024-10-08",
+    "titre": "Je ne reconnais plus mes propres mains",
+    "contenu": "Je me réveille avec du sang. Encore. Emily me regarde comme si j'étais un monstre — et honnêtement, je ne sais plus si elle a tort. J'ai peur de ce que je suis en train de devenir. Papi m'a toujours dit de rester loin de tout ça, loin de la chasse, loin de ce monde. Je pensais que c'était pour me protéger d'eux. Je crois maintenant que c'était pour me protéger de moi.",
+    "epingle": true,
+    "tagCreature": "djinn"
+  },
+  {
+    "id": "entry-nina-02",
+    "auteur": "Nina Singer",
+    "date": "2024-10-11",
+    "titre": "Le site qui m'attendait",
+    "contenu": "J'ai trouvé un site cette nuit, Libris Occultus. Un genre de grimoire numérique, avec des archives entières sur les créatures que papi a toujours refusé de m'expliquer en détail. J'ai lu sur les Djinns pendant des heures. Il y a une marque, disent-ils. Une marque sur l'avant-bras. J'ai relevé ma manche. Elle est là.",
+    "epingle": true,
+    "tagCreature": "djinn"
+  },
+  {
+    "id": "entry-nina-03",
+    "auteur": "Nina Singer",
+    "date": "2024-10-16",
+    "titre": "Ce que je me souviens",
+    "contenu": "Le chandelier. Ses cris. J'ai écrit quelque chose sur le mur avec son sang, je ne me souviens plus des mots exacts, seulement de la sensation de la peinture rouge et chaude sous mes doigts. Papi dit que ce n'était pas moi. Dean dit qu'on a tous du sang sur les mains. Je veux les croire. Certains jours j'y arrive.",
+    "epingle": false,
+    "tagCreature": "djinn"
+  },
+  {
+    "id": "entry-bobby-01",
+    "auteur": "Bobby Singer",
+    "date": "1994-03-02",
+    "titre": "Sur les fantômes routiers du comté",
+    "contenu": "Troisième accident sur la Route 14 en un mois, toujours au même virage, toujours vers 23h. J'ai vérifié les registres du comté : une jeune femme est morte exactement là en 1968. Le sel a fonctionné la première nuit. Je reviens brûler ce qui reste de sa robe demain.",
+    "epingle": false,
+    "tagCreature": "fantome"
+  },
+  {
+    "id": "entry-sam-01",
+    "auteur": "Sam Winchester",
+    "date": "2024-10-13",
+    "titre": "Notes sur la marque de Djinn",
+    "contenu": "Les marques sur le bras de Nina correspondent exactement aux schémas d'empoisonnement lent que j'ai vus dans les carnets de Dad. Trois semaines d'exposition minimum avant que la fusion psychique ne devienne irréversible. On a un délai, mais il est court. Il faut trouver le repaire avant la troisième nuit.",
+    "epingle": false,
+    "tagCreature": "djinn"
+  }
+]

@@ -1,0 +1,37 @@
+// ============================================
+// LIBRIS OCCULTUS — TOKENS DE DESIGN
+// ============================================
+
+// --- Palette ---
+$noir-profond:     #0f0c08;
+$noir-profond-2:   #17120c;
+$cuir:             #3c2f2f;
+$cuir-clair:       #5a4636;
+$or-vieilli:       #d4af37;
+$or-terni:         #9c7a28;
+$rouge-sang:       #8b0000;
+$rouge-sang-clair: #b5122e;
+$parchemin:        #f5e8c7;
+$parchemin-ombre:  #e2d3a8;
+$encre:            #241c14;
+
+// --- Typographie ---
+$font-display: 'Cinzel Decorative', 'Georgia', serif;   // grands titres gravés
+$font-body:    'EB Garamond', 'Iowan Old Style', serif; // corps de texte
+$font-hand:    'Caveat', cursive;                        // notes manuscrites, journal
+
+// --- Échelle ---
+$radius-sm: 3px;
+$radius-md: 6px;
+$radius-lg: 14px;
+
+$shadow-page:  0 20px 60px rgba(0, 0, 0, 0.65), 0 2px 8px rgba(0,0,0,0.4);
+$shadow-inset: inset 0 0 120px rgba(0, 0, 0, 0.55);
+
+$transition-page: 0.7s cubic-bezier(0.65, 0, 0.35, 1);
+$transition-fast: 0.25s ease;
+
+// --- Z-index ---
+$z-header: 50;
+$z-page-overlay: 100;
+$z-modal: 200;
