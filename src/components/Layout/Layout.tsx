@@ -145,6 +145,12 @@ export default function Layout() {
             <FontAwesomeIcon icon={faBookSkull} /> Libris Occultus — grimoire tenu par le réseau des
             chasseurs. Consulté à ses risques et périls.
           </p>
+          <p className="pied-de-page__credit">
+            Créé par{' '}
+            <a href="https://github.com/kitotake" target="_blank" rel="noopener noreferrer">
+              kitotake
+            </a>
+          </p>
         </div>
       </footer>
     </div>
