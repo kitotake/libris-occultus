@@ -121,6 +121,168 @@
     "casLies": []
   },
   {
+    "id": "loup-garou",
+    "nom": "Loup-Garou",
+    "sousTitre": "La Bête sous la Pleine Lune",
+    "categorie": "Humain corrompu",
+    "dangerosite": 4,
+    "anneePremiereApparition": 1935,
+    "image": "https://placehold.co/600x800/0f0c08/d4af37?text=Loup-Garou&font=playfair-display",
+    "description": "Contrairement à la légende populaire, la transformation ne suit pas systématiquement le cycle lunaire — certaines lignées se changent chaque nuit, d'autres seulement lors d'épisodes de rage extrême. Le sujet garde souvent le souvenir de ses actes sous forme animale, ce qui le ronge autant que la faim elle-même. La malédiction se transmet par morsure profonde, rarement par simple griffure.",
+    "signes": [
+      "Cœur arraché ou organes manquants sur les victimes, retrouvées en pleine nature",
+      "Empreintes de griffes bien plus larges qu'une patte de loup ordinaire",
+      "Cicatrices de morsure ancienne, souvent dissimulées, chez le suspect",
+      "Réveils confus, terre ou sang sous les ongles sans souvenir de la nuit précédente"
+    ],
+    "faiblesses": [
+      "Balle en argent — seule munition confirmée capable de tuer la forme transformée",
+      "Certains sujets parviennent à retarder la transformation par une discipline de fer et l'isolement volontaire",
+      "Vulnérable comme un humain ordinaire sous sa forme non transformée"
+    ],
+    "histoire": "Les premiers carnets recensant ce type de cas remontent aux années 1930, dans des fermes isolées du Midwest. Le réseau distingue aujourd'hui plusieurs lignées selon la fréquence de transformation et le degré de conscience conservé — un sujet qui garde sa lucidité représente souvent le cas le plus tragique à traiter pour un chasseur.",
+    "casLies": []
+  },
+  {
+    "id": "goule",
+    "nom": "Goule",
+    "sousTitre": "Le Visage du Défunt",
+    "categorie": "Créature",
+    "dangerosite": 3,
+    "anneePremiereApparition": 1963,
+    "image": "https://placehold.co/600x800/0f0c08/d4af37?text=Goule&font=playfair-display",
+    "description": "Charognarde par nécessité mais chasseresse à l'occasion, la goule se nourrit de chair déjà morte et prend alors durablement l'apparence du défunt consommé — assez pour tromper une famille entière pendant des semaines. Certaines lignées, affamées, s'attaquent aussi aux vivants sans forcément les tuer.",
+    "signes": [
+      "Tombes fraîchement profanées, cercueils ouverts de l'intérieur",
+      "Un proche « revenu » au comportement subtilement différent après un décès",
+      "Odeur de terre et de décomposition qui persiste malgré une hygiène irréprochable",
+      "Dents anormalement nombreuses ou acérées visibles un bref instant"
+    ],
+    "faiblesses": [
+      "Décapitation ou traumatisme crânien massif — seules méthodes fiables pour l'arrêter définitivement",
+      "Perd sa forme empruntée si elle reste trop longtemps sans se nourrir",
+      "Se déplace mal en plein jour dans les lieux très fréquentés, préfère l'ombre des cimetières"
+    ],
+    "histoire": "Documentée dans plusieurs cimetières ruraux depuis le début des années 1960, la goule reste l'une des créatures les plus difficiles à repérer à temps : le chasseur ne réalise souvent la substitution qu'après avoir passé du temps auprès de l'imposteur.",
+    "casLies": []
+  },
+  {
+    "id": "demon",
+    "nom": "Démon",
+    "sousTitre": "La Fumée Noire",
+    "categorie": "Entité",
+    "dangerosite": 5,
+    "anneePremiereApparition": null,
+    "image": "https://placehold.co/600x800/0f0c08/d4af37?text=D%C3%A9mon&font=playfair-display",
+    "description": "Sous sa forme véritable, le démon se manifeste comme une épaisse fumée noire capable de posséder un corps humain par la bouche ou les voies respiratoires, écartant la conscience de l'hôte sans forcément l'effacer. Certains négocient, d'autres détruisent — mais tous cherchent à corrompre plus qu'à simplement tuer.",
+    "signes": [
+      "Yeux qui virent brièvement au noir total, sclérotique comprise",
+      "Odeur de soufre persistante autour de la victime possédée",
+      "Sautes de personnalité radicales, voix qui se déforme sous la contrainte",
+      "Effets électriques ou lumineux anormaux (ampoules qui grillent, télévisions qui grésillent) à proximité"
+    ],
+    "faiblesses": [
+      "Cercle ou piège de sceaux tracé au sang ou à la peinture — empêche toute fuite ou possession",
+      "Le sel purifié et l'eau bénite provoquent des brûlures sur la forme démoniaque",
+      "L'exorcisme rituel expulse le démon du corps hôte sans nécessairement le détruire",
+      "Une lame forgée spécifiquement contre les démons peut les tuer définitivement, contrairement aux armes ordinaires"
+    ],
+    "histoire": "Le réseau des chasseurs considère les démons comme la menace la plus constante et la plus rusée qu'ils affrontent — capables de patience sur des décennies, de manipulation psychologique fine, et de survivre à l'intérieur d'un hôte sans jamais se trahir.",
+    "casLies": []
+  },
+  {
+    "id": "sirene",
+    "nom": "Sirène",
+    "sousTitre": "Le Chant qui Divise",
+    "categorie": "Créature",
+    "dangerosite": 3,
+    "anneePremiereApparition": null,
+    "image": "https://placehold.co/600x800/0f0c08/d4af37?text=Sir%C3%A8ne&font=playfair-display",
+    "description": "Loin de l'image marine du folklore, cette créature s'infiltre dans un groupe soudé — famille, amis, collègues — en prenant l'apparence de la personne de confiance de chacun. Une fois liée par sa toxine à plusieurs membres du groupe, elle les monte les uns contre les autres jusqu'à ce que la méfiance devienne violence.",
+    "signes": [
+      "Disputes soudaines et disproportionnées au sein d'un groupe jusque-là uni",
+      "Une même personne perçue différemment par chaque témoin au même moment",
+      "Traces de toxine (souvent salivaire) retrouvées lors d'un contact rapproché récent",
+      "Un individu du groupe devient inexplicablement protecteur ou possessif envers la créature déguisée"
+    ],
+    "faiblesses": [
+      "Lame de bronze — seul métal confirmé capable de percer sa peau et de la tuer",
+      "Vulnérable à sa propre toxine si on parvient à la lui faire ingérer",
+      "Doit maintenir un contact régulier avec ses victimes pour garder son emprise, ce qui la rend traçable"
+    ],
+    "histoire": "Un des cas les plus étudiés par le réseau concerne un petit groupe d'amis d'université dont chaque membre en était venu à soupçonner les autres de trahison, avant qu'un chasseur ne découvre qu'une seule créature manipulait l'ensemble du groupe depuis l'intérieur.",
+    "casLies": []
+  },
+  {
+    "id": "chien-enfer",
+    "nom": "Chien de l'Enfer",
+    "sousTitre": "L'Invisible qui Traque",
+    "categorie": "Entité",
+    "dangerosite": 5,
+    "anneePremiereApparition": null,
+    "image": "https://placehold.co/600x800/0f0c08/d4af37?text=Chien+de+l%27Enfer&font=playfair-display",
+    "description": "Invisible à l'œil nu sauf don particulier, le chien de l'enfer est envoyé collecter une dette contractée lors d'un pacte : dix années de vie contre un vœu exaucé, puis l'échéance vient réclamer son dû. Ses griffures profondes et parallèles sont la seule trace physique de son passage.",
+    "signes": [
+      "Griffures profondes et parallèles apparaissant sans agresseur visible",
+      "Grondements sourds et bruits de chaîne entendus juste avant une échéance de pacte",
+      "Chiens domestiques pris de panique ou hurlant sans raison apparente à proximité",
+      "Odeur de soufre similaire à celle des démons, dont il est l'instrument"
+    ],
+    "faiblesses": [
+      "Peut être vu temporairement grâce à un onguent spécifique appliqué sur les yeux",
+      "Rappelé uniquement par le démon qui a scellé le pacte correspondant — négocier l'annulation du pacte l'arrête",
+      "Aucune arme conventionnelle n'a d'effet confirmé contre sa forme invisible"
+    ],
+    "histoire": "Les carnets du réseau rappellent qu'aucun pacte conclu à un carrefour n'échappe à son chien : le compte à rebours, une fois lancé, ne connaît qu'une seule fin si rien n'est fait avant l'échéance.",
+    "casLies": []
+  },
+  {
+    "id": "kitsune",
+    "nom": "Kitsune",
+    "sousTitre": "Le Renard aux Neuf Queues",
+    "categorie": "Créature",
+    "dangerosite": 3,
+    "anneePremiereApparition": null,
+    "image": "https://placehold.co/600x800/0f0c08/d4af37?text=Kitsune&font=playfair-display",
+    "description": "Humanoïde le plus souvent, le kitsune ne trahit sa nature que lors de l'attaque : ses yeux prennent une forme vulpine et de longues griffes noires jaillissent de ses mains. Il se nourrit d'une glande précise chez sa victime, ce qui rend chaque attaque rapide mais rarement discrète.",
+    "signes": [
+      "Yeux qui prennent brièvement une pupille fendue, verticale, façon renard",
+      "Griffes noires rétractables visibles un instant lors de l'agression",
+      "Victimes retrouvées avec une plaie chirurgicale précise, sans autre mutilation",
+      "Odeur légère de renard ou de musc autour du suspect"
+    ],
+    "faiblesses": [
+      "Un simple coup de lame au cœur suffit à le tuer, contrairement à des créatures plus résistantes",
+      "Doit se nourrir régulièrement de la glande spécifique, sans quoi il s'affaiblit rapidement",
+      "Peut survivre en prélevant sur un corps déjà mort si nécessaire, ce qui le rend imprévisible"
+    ],
+    "histoire": "Rare en dehors des grandes villes portuaires, le kitsune reste l'une des créatures les moins bien documentées du réseau, la plupart des cas ayant été résolus avant qu'un dossier complet ne soit constitué.",
+    "casLies": []
+  },
+  {
+    "id": "banshee",
+    "nom": "Banshee",
+    "sousTitre": "Le Cri qui Précède la Mort",
+    "categorie": "Esprit",
+    "dangerosite": 3,
+    "anneePremiereApparition": null,
+    "image": "https://placehold.co/600x800/0f0c08/d4af37?text=Banshee&font=playfair-display",
+    "description": "Certaines lignées se contentent d'annoncer une mort à venir ; d'autres, corrompues, provoquent directement la mort de leur cible par un cri capable de faire éclater les vaisseaux sanguins ou de pousser la victime à se blesser elle-même pour faire cesser le son.",
+    "signes": [
+      "Cri strident perçu par une seule personne dans une pièce pleine de monde",
+      "Saignements de nez ou d'oreilles sans cause physique identifiable",
+      "Silhouette pâle entraperçue près d'un mourant ou d'une future victime",
+      "Sensation de terreur immotivée juste avant l'apparition"
+    ],
+    "faiblesses": [
+      "Lame ou pointe en or plantée dans le cœur — seule méthode confirmée pour la tuer",
+      "Certains sceaux d'origine celtique permettent de la bannir temporairement ou de la piéger",
+      "Se déplace via le brouillard, difficile à intercepter en terrain dégagé"
+    ],
+    "histoire": "Peu de chasseurs rencontrent une banshee plus d'une fois dans leur carrière tant ses apparitions restent rares et localisées — souvent liées à un lieu précis chargé d'un deuil ancien.",
+    "casLies": []
+  },
+  {
     "id": "rugaru",
     "nom": "Rugaru",
     "sousTitre": "Celui qui Résiste à la Faim",
@@ -144,4 +306,3 @@
     "casLies": []
   }
 ]
-
